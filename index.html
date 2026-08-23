@@ -4,14 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stash</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Welcome to my webpage</h1>
-    <h2>This is my html css project</h2>
-    <h3>Contact us: 1234567</h3>
+
+    <header>
+        <nav>
+            <h2>MyWebsite</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Welcome to my website</h1>
+            <p>This is my HTML, CSS and JavaScript project.</p>
+            <button id="welcomeButton">Click Me</button>
+        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-container">
+
+                <div class="card">
+                    <h3>Linux</h3>
+                    <p>Linux and Bash scripting projects.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Docker</h3>
+                    <p>Containerization and Docker projects.</p>
+                </div>
+
+                <div class="card">
+                    <h3>DevOps</h3>
+                    <p>DevOps learning and automation projects.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MyWebsite</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
