@@ -4,60 +4,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+
+    <title>NimaDev | Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h2>MyWebsite</h2>
+    <!-- Background -->
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            Nima<span>Dev</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="theme-btn" id="themeButton">
+            ☾
+        </button>
+
+        <a href="#contact" class="nav-button">
+            Get In Touch
+        </a>
+
     </header>
 
+
+    <!-- Hero -->
     <main>
 
-        <section class="hero">
-            <h1>Welcome to my website</h1>
-            <p>This is my HTML, CSS and JavaScript project.</p>
-            <button id="welcomeButton">Click Me</button>
-        </section>
+        <section class="hero" id="home">
 
-        <section class="projects">
-            <h2>My Projects</h2>
+            <div class="hero-content">
 
-            <div class="project-container">
-
-                <div class="card">
-                    <h3>Linux</h3>
-                    <p>Linux and Bash scripting projects.</p>
+                <div class="badge">
+                    👋 Hello, I'm Nima
                 </div>
 
-                <div class="card">
-                    <h3>Docker</h3>
-                    <p>Containerization and Docker projects.</p>
+                <h1>
+                    I Build Modern
+                    <span>Web Experiences</span>
+                </h1>
+
+                <p>
+                    A passionate DevOps learner building modern,
+                    fast and beautiful websites.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-btn">
+                        View My Work →
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me ✈
+                    </a>
+
                 </div>
 
-                <div class="card">
-                    <h3>DevOps</h3>
-                    <p>DevOps learning and automation projects.</p>
+                <div class="socials">
+
+                    <a href="#" aria-label="GitHub">
+                        GitHub
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+
+                    <a href="#" aria-label="Email">
+                        Email
+                    </a>
+
                 </div>
 
             </div>
+
+
+            <!-- 3D Laptop -->
+            <div class="hero-visual">
+
+                <div class="laptop">
+
+                    <div class="screen">
+
+                        <div class="screen-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code">
+                            <p>&lt;<span>html</span>&gt;</p>
+                            <p>&nbsp;&nbsp;&lt;<span>body</span>&gt;</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Hello World</b></p>
+                            <p>&nbsp;&nbsp;&lt;/<span>body</span>&gt;</p>
+                            <p>&lt;/<span>html</span>&gt;</p>
+                        </div>
+
+                    </div>
+
+                    <div class="keyboard">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+                <div class="floating-icon icon-1">
+                    &lt;/&gt;
+                </div>
+
+                <div class="floating-icon icon-2">
+                    ⚡
+                </div>
+
+                <div class="floating-icon icon-3">
+                    ◈
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="skills" id="about">
+
+            <div class="skill-card">
+
+                <div class="skill-icon blue">
+                    ◆
+                </div>
+
+                <h3>Modern Design</h3>
+
+                <p>
+                    Clean, modern and beautiful UI/UX.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon purple">
+                    🚀
+                </div>
+
+                <h3>Fast Performance</h3>
+
+                <p>
+                    Optimized for speed and best performance.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon green">
+                    ✓
+                </div>
+
+                <h3>Responsive</h3>
+
+                <p>
+                    Looks perfect on all devices.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon cloud">
+                    ☁
+                </div>
+
+                <h3>DevOps Ready</h3>
+
+                <p>
+                    Built with a DevOps mindset.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+
+            <div class="section-title">
+
+                <h2>My Projects</h2>
+
+                <div class="title-line"></div>
+
+            </div>
+
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image dashboard">
+                        <span>DevOps Dashboard</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>DevOps Dashboard</h3>
+
+                        <p>
+                            A beautiful dashboard to monitor
+                            servers and services.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <button class="project-btn">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image travel">
+                        <span>Travel Website</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Travel Website</h3>
+
+                        <p>
+                            A modern travel website with
+                            stunning animations.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <button class="project-btn">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image notes">
+                        <span>Note App</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Note App</h3>
+
+                        <p>
+                            A simple and beautiful note
+                            taking application.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <button class="project-btn">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+
+            <h2>Let's Build Something</h2>
+
+            <p>
+                Have a project in mind? Let's work together.
+            </p>
+
+            <a href="mailto:example@email.com" class="primary-btn">
+                Contact Me
+            </a>
+
         </section>
 
     </main>
 
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 MyWebsite</p>
+
+        <p>
+            © 2026 NimaDev. Built with HTML, CSS & JavaScript.
+        </p>
+
     </footer>
+
 
     <script src="js/script.js"></script>
 
